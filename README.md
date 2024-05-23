@@ -1,3 +1,37 @@
+# Vim Tweaks for Sunaku's 'Glorious Engrammer' 
+This is my expirimental version of `Glorious Engrammer`.
+
+### Changes:
+#### Sensible HJKL movement:
+The Cursor layer, Symbol layer and the Arrow keys have the Up and Down movement swapped to default Vi behavior. 
+
+#### Harpoon:
+Harpoon marks are on the Cursor layer:  `<BKSP> L, D, W, V, Z`
+
+#### LSP Diagnostics
+- Jump 'next/previous' error.  
+  This activates a custom Neovim command. Which allows me to jump to errors only (a.k.a. skip verbose diagnostics).
+- Jump diagnostics `]d`/`[d`.
+
+#### Telescope:
+- Find Files
+- Find (grep) Words
+
+#### Vim:
+- `{` and `}` paragraph movement.
+- `O` and `I` Jump list navigation.
+- `,` on the same key as `;`   
+For jumping forward/backwards while `f/F`ind and `t/T` 
+
+#### Symbol layer
+Swapped:
+- `$` with `#`
+- `&` with `^`
+
+------------------------
+Below the original content by Sunaku:
+----------------------
+
 # "Glorious Engrammer" keymap for MoErgo Glove80
 
 This is [my Glove80] keymap featuring the [Engram] and [Engrammer] layouts with
