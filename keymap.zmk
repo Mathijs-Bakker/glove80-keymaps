@@ -10598,6 +10598,88 @@ UNICODE_MORPH_MODS
                 = <&kp LBKT>
                 , <&kp D>;
         };
+    vim_gg: vim_gg {
+            label = "&VIM_GG";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            
+            
+            bindings
+                = <&kp G>
+                , <&kp G>;
+        };
+    Vim_Find_File: Vim_Find_File {
+            label = "&VIM_FIND_FILE";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            
+            
+            bindings
+                = <&kp SPACE>
+                , <&kp F>
+                , <&kp F>;
+        };
+    Vim_Grep_Word: Vim_Grep_Word {
+            label = "&VIM_GREP_WORD";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            
+            
+            bindings
+                = <&kp SPACE>
+                , <&kp F>
+                , <&kp W>;
+        };
+    Vim_Mark_1: Vim_Mark_1 {
+            label = "&VIM_MARK_1";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            
+            
+            bindings
+                = <&kp BSPC>
+                , <&kp C>;
+        };
+    Vim_Mark_2: Vim_Mark_2 {
+            label = "&VIM_MARK_2";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            
+            
+            bindings
+                = <&kp BSPC>
+                , <&kp I>;
+        };
+    Vim_Mark_3: Vim_Mark_3 {
+            label = "&VIM_MARK_3";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            
+            
+            bindings
+                = <&kp BSPC>
+                , <&kp E>;
+        };
+    Vim_Mark_4: Vim_Mark_4 {
+            label = "&VIM_MARK_4";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            
+            
+            bindings
+                = <&kp BSPC>
+                , <&kp A>;
+        };
+    Vim_Mark_5: Vim_Mark_5 {
+            label = "&VIM_MARK_5";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            
+            
+            bindings
+                = <&kp BSPC>
+                , <&kp COMMA>;
+        };
     };
 };
 
@@ -10829,12 +10911,12 @@ UNICODE_MORPH_MODS
 
         layer_Cursor {
             bindings = <
-     &none               &none               &none               &none               &none                                                                                                                             &none           &none           &none      &none        &none
-   &kp ESC             &kp RET           &kp SPACE             &kp TAB             &kp DEL     &kp INS                                                                                                    &kp INS    &kp DEL         &kp TAB       &kp SPACE    &kp RET      &kp ESC
- &kp _C(K)           &sk LSHFT           &kp _REDO           &kp _UNDO            &kp BSPC    &kp _CUT                                                                                                   &kp _CUT   &kp BSPC       &kp _UNDO       &kp _REDO  &sk LSHFT    &kp _C(K)
- &kp _C(L)  &kp LEFT_PINKY_MOD  &kp LEFT_RING1_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD   &kp _COPY                                                                                                  &kp _COPY   &kp LEFT        &kp DOWN          &kp UP  &kp RIGHT    &kp _C(L)
- &kp _C(J)           &kp _C(A)        &select_line        &select_word           &kp _FIND  &kp _PASTE  &mod_tab _A_TAB  &mod_tab _G_TAB            &kp TAB  &select_none  &extend_line  &extend_word  &kp _PASTE   &kp HOME       &kp PG_UP       &kp PG_DN    &kp END    &kp _C(J)
- &kp _C(H)      &kp _FIND_PREV        &extend_line        &extend_word      &kp _FIND_NEXT                        &none    &mod_tab LCTL  &tog LAYER_Cursor     &kp _C(A)  &select_line  &select_word              &kp _FIND  &kp _FIND_PREV  &kp _FIND_NEXT  &kp _C(H)  &kp LG(DOT)
+     &none               &none               &none               &none               &none                                                                                                                                                       &none         &none         &none           &none                          &none
+   &kp ESC             &kp RET           &kp SPACE             &kp TAB             &kp DEL     &kp INS                                                                                                                           &none           &none         &none         &none           &none                          &none
+ &kp _C(K)           &sk LSHFT           &kp _REDO           &kp _UNDO            &kp BSPC    &kp _CUT                                                                                                                       &kp COMMA     &Vim_Mark_1   &Vim_Mark_2   &Vim_Mark_3     &Vim_Mark_4                    &Vim_Mark_5
+ &kp _C(L)  &kp LEFT_PINKY_MOD  &kp LEFT_RING1_MOD  &kp LEFT_MIDDY_MOD  &kp LEFT_INDEX_MOD   &kp _COPY                                                                                                 &vim_lsp_diagnostics_prev_error        &kp LEFT      &kp DOWN        &kp UP       &kp RIGHT  &vim_lsp_diagnostics_previous
+ &kp _C(J)           &kp _C(A)        &select_line        &select_word           &kp _FIND  &kp _PASTE  &mod_tab _A_TAB  &mod_tab _G_TAB            &kp TAB  &select_none  &extend_line  &extend_word  &vim_lsp_diagnostics_next_error           &kp G  &kp LS(RBRC)  &kp LS(LBRC)         &vim_gg      &vim_lsp_diagnostics_next
+ &kp _C(H)      &kp _FIND_PREV        &extend_line        &extend_word      &kp _FIND_NEXT                        &none    &mod_tab LCTL  &tog LAYER_Cursor     &kp _C(A)  &select_line  &select_word                                   &Vim_Find_File     &kp LC(I)     &kp LC(O)  &Vim_Grep_Word                          &none
             >;
         };
 
