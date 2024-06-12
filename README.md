@@ -3,7 +3,7 @@ This is my experimental version of `Glorious Engrammer`.
 
 ### Changes:
 #### Default Vim movement (hjkl) behavior:
-The _Cursor_ layer, _Symbol_ layer and the _Arrow keys_, have the `Up` and `Down` movement swapped to the default Vi behavior.
+On the _Cursor_ layer, _Symbol_ layer and the _Arrow keys_, the `Up` and `Down` movement behavior is swapped to the default Vi behavior.
 On the typing layers, `hjkl` functions like normal.
 
 #### Harpoon: (Cursor layer)
