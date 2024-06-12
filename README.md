@@ -1,15 +1,15 @@
 # Vim Tweaks to Sunaku's 'Glorious Engrammer' 
-This is my expirimental version of `Glorious Engrammer`.
+This is my experimental version of `Glorious Engrammer`.
 
 ### Changes:
-#### Default HJKL behavior:
+#### Default Vim movement (hjkl) behavior:
 The _Cursor_ layer, _Symbol_ layer and the _Arrow keys_, have the `Up` and `Down` movement swapped to the default Vi behavior.
 On the typing layers, `hjkl` functions like normal.
 
-#### Harpoon:
+#### Harpoon: (Cursor layer)
 Harpoon marks are on the Cursor layer:  `<BKSP> L, D, W, V, Z`
 
-#### LSP Diagnostics
+#### LSP Diagnostics (Cursor layer)
 - Jump `next/previous` diagnostics by severity.  
   In case of LSP _errors_ this will only jump to errors. Skipping the more verbose diagnostics (info, warn, hint).  
   This activates a custom Neovim command. Which allows me to focus on errors.  
@@ -17,13 +17,13 @@ Harpoon marks are on the Cursor layer:  `<BKSP> L, D, W, V, Z`
 - Jump diagnostics `]d`/`[d`.  
 The default LSP diagnostic behavior.
 
-#### Telescope:
+#### Telescope (Cursor layer)
 - Find Files
 - Find (grep) Words
 
-#### Vim:
+#### Vim (on both Symbol and Cursor layer):
 - `{` and `}` paragraph movement.
-- `O` and `I` Jump list navigation.
+- `ctrl + o` and `ctrl + i` Jump list navigation.
 - `,` on the same key as `;`   
 For jumping forward/backwards while `f/F`ind and `t/T` 
 
